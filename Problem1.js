@@ -1,10 +1,11 @@
-function myFunction(input) {
-  const parsed = parseInt(input);
-  if (isNaN(parsed) || parsed === false) {
+function convertToNum(input) {
+  const result = parseInt(input);
+  if (isNaN(result) || parsed === false) {
     return 0;
   }
-  return parsed;
+  return result;
 }
-console.log(myFunction("absvcjasvjav"));
+console.log(convertToNum("absvcjasvjav"));
+console.log(convertToNum("22"));
 
 //-----------------------------------------
